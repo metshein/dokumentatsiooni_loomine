@@ -25,5 +25,4 @@ Tulemus peab olema tõendatav:
 
 Käsud ja kood tuleb eraldi ja selgelt vormindada. Dokumentatsiooni põhjal peab olema võimalik tehtut kontrollida.
 
-{: .warning }
 👉 Täpsem juhend: [https://github.com/metshein/dokumentatsiooni_loomine/wiki](https://metshein.github.io/dokumentatsiooni_loomine/)
