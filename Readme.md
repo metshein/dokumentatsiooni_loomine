@@ -22,7 +22,7 @@ Tulemus peab olema tõendatav:
 
 Käsud ja kood tuleb eraldi ja selgelt vormindada. Dokumentatsiooni põhjal peab olema võimalik tehtut kontrollida.
 
-👉 Täpsem juhend: [Dokumentatsiooni juhend](../../wiki/Dokumentatsiooni-juhend)
+👉 Täpsem juhend: [Dokumentatsiooni juhend](https://github.com/metshein/dokumentatsiooni_loomine/wiki)
 
 ## Pikk versioon
 
