@@ -28,9 +28,9 @@ flowchart TB
 	B[Miks tehti]
 	C[Milline on tulemus]
 
-	D --> A
-	D --> B
-	D --> C
+	A --> D
+	B --> D
+	C --> D
 ```
 
 ## Sisukord
