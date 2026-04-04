@@ -21,19 +21,24 @@ Kirjelda tegevusplokke, mitte iga üksikut hiireklõpsu või klahvivajutust. Kui
 
 Hea reegel on see: kui tegevuse saab hiljem sama järgi uuesti teha, siis see kuulub siia.
 
-> Näide (hea): paigaldati PostgreSQL andmebaasiserver, et rakendus saaks andmeid püsivalt salvestada ja päringuid teha.
->
-> Koodinäide:
->
-> ```bash
-> sudo apt install postgresql
-> sudo systemctl enable postgresql
-> sudo systemctl start postgresql
-> sudo -u postgres psql -c "CREATE DATABASE projekt_db;"
-> ```
->
-> (Pilditõestus andmebaasi loomisest)
-> {: .green }
+{: .green }
+Näide (hea): paigaldati PostgreSQL andmebaasiserver käsuga `sudo apt install postgresql`, et rakendus saaks andmeid püsivalt salvestada.
+(pilditõestus)
+
+Kui tegu on tavapäraste üksteisele järgnevate käskudega ja tulemus on üks, võib kirjelduse kirjutada pikema lõiguna, kuid käsud tuleb siiski eraldi koodilõiguna välja tuua.
+
+Näide 2 (hea): uuendati paketiloendeid, paigaldati PostgreSQL ning loodi rakenduse jaoks andmebaas.
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install postgresql postgresql-contrib -y
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+sudo -u postgres psql -c "CREATE DATABASE projekt_db;"
+```
+
+(Pilditõestus andmebaasi loomisest)
 
 Väldi:
 
