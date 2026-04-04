@@ -24,25 +24,33 @@ Käsud ja kood tuleb eraldi ja selgelt vormindada. Dokumentatsiooni põhjal peab
 
 ## Pikk versioon
 
-Dokumentatsiooni eesmärk on tõendada tehtud tööd. See ei ole lihtsalt tegevuste kirjeldus, vaid selgitus, mis näitab, et autor saab aru, mida ta teeb ja suudab tulemust põhjendada.
+Dokumentatsiooni eesmärk sõltub kontekstist, kuid põhimõte on sama – tehtud töö peab olema arusaadav, põhjendatud ja kasutatav ka teiste poolt.
+Õppetöös on dokumentatsioon tehniline tõendusmaterjal. Selle abil näidatakse, mida tehti, miks seda tehti ja kas autor saab tehtud tööst aru.
+
+Päriselus on dokumentatsiooni roll praktilisem:
+- süsteemi saaks üles ehitada ja taastada  
+- teised saaksid aru, kuidas see töötab  
+- haldus ja veaotsing oleks võimalik  
+
+Hea dokumentatsioon ühendab need mõlemad. See ei kirjelda ainult tegevusi, vaid selgitab otsuseid ja tõendab tulemust nii, et teine inimene saab aru, mis tehti, miks seda tehti ja kuidas sama lahendus uuesti toimima panna.
 
 ## 1. Mida tehti
 
-Kirjelda konkreetselt tehtud tegevused.
-
-Väldi üldsõnalisi lauseid:
-- “seadistasin süsteemi”
-- “tegin vajalikud muudatused”
+Kirjelda konkreetselt tehtud tegevused. Väldi üldsõnalisi lauseid:
+- "seadistati süsteem"
+- "tehti vajalikud muudatused"
 
 Too välja:
-- millised tegevused tehti  
-- milliseid käske või tööriistu kasutati  
+- milline tegevus tehti  
+- millise käsu või tööriistaga  
 
 Näide (halb):
-- seadistasin serveri
+- seadistati server
 
 Näide (hea):
-- paigaldati vajalik tarkvara käsuga `sudo apt install pakett`
+- paigaldati tarkvara käsuga `sudo apt install pakett`
+
+---
 
 ## 2. Miks tehti
 
@@ -50,7 +58,7 @@ Iga oluline tegevus peab olema põhjendatud.
 
 Näita:
 - miks see samm oli vajalik  
-- mida see muudatus lahendab või mõjutab  
+- mida see lahendab või võimaldab  
 
 Näide (halb):
 - muudeti seadistust
@@ -58,62 +66,99 @@ Näide (halb):
 Näide (hea):
 - seadistust muudeti, et piirata ligipääsu ainult lokaalsele masinale
 
+---
+
 ## 3. Milline on tulemus
 
-Dokumentatsioon peab näitama lõpptulemust.
+Dokumentatsioon peab näitama lõpptulemust ja selle kontrolli.
 
-See tähendab:
-- kuidas kontrolliti, et asi töötab  
-- milline oli kontrolli tulemus  
+Too välja:
+- kuidas kontrolliti  
+- milline oli tulemus  
 
 Näide (halb):
 - süsteem töötab
 
 Näide (hea):
 - kontrolliti teenuse olekut käsuga `systemctl status teenus`  
-- väljund näitas: active (running)
+- tulemuseks oli `active (running)`, mis kinnitab, et teenus töötab  
 
-## 4. Vormistus ja kirjutamisviis
+Tõestus võib olla:
+- käsu väljund (kopeeritud tekst)  
+- logi või päringu tulemus  
+- ekraanipilt  
+- link (kui viib otsesele ja kontrollitavale tulemusele)  
 
-Dokumentatsioon kirjutatakse **umbisikulises vormis**.
+Oluline:
+- tõestus peab olema kontrollitav  
+- tõestus peab olema seotud väitega (ei tohi olla suvaline pilt või väljund)  
 
-See tähendab:
-- kasutatakse: tehti, paigaldati, muudeti  
-- ei kasutata: ma tegin, ma paigaldasin  
+---
+
+## 4. Tõestus
+
+Iga oluline tulemus peab olema tõendatav.
+
+Sobivad tõestused:
+- käsu väljund  
+- logi või päringu tulemus  
+- ekraanipilt  
+- link (kui see viib otsesele tulemusele)
+
+Näide:
+- teenuse olek kontrolliti käsuga `systemctl status teenus`  
+- väljund näitas `active (running)`
+
+---
+
+## 5. Vormistus ja kirjutamisviis
+
+Dokumentatsioon kirjutatakse umbisikulises vormis.
+
+Kasutatakse:
+- tehti, paigaldati, muudeti  
+
+Ei kasutata:
+- ma tegin, paigaldasin, muutsin  
 
 Näide (halb):
-- ma paigaldasin tarkvara  
-- ma muutsin faili  
+- paigaldasin tarkvara ja muutsin faili
 
 Näide (hea):
-- tarkvara paigaldati  
-- konfiguratsioonifaili muudeti  
+- tarkvara paigaldati ja konfiguratsioonifaili muudeti  
 
-Käsud ja kood tuleb esitada kas:
-- eraldi koodiplokis (pikemad käsud)  
-- või rea sees (lühemad käsud)
+Käsud ja kood esitatakse:
+- lühikesed käsud teksti sees (`käsk`)  
+- pikemad käsud eraldi plokis (taandega)
 
-## 5. Väldi tüüpvigu
+Näide:
+- `sudo apt install pakett`
 
-Halb dokumentatsioon:
+Kui dokumentatsioon kirjutatakse tekstiredaktoris (nt Drive Document), siis:
+- koodi ja käske kuvatakse monoruumi fondiga (nt **Courier New**, **Consolas**)  
 
-- kirjeldab ainult tegevust, mitte tulemust  
-- ei põhjenda tehtud samme  
-- kasutab üldsõnalisi väljendeid  
-- sisaldab pilte ilma selgituseta  
+See aitab eristada käske ja muud teksti ning muudab dokumentatsiooni loetavamaks.
 
-Hea dokumentatsioon:
+---
 
-- on konkreetne  
-- on põhjendatud  
-- on kontrollitav  
+## 6. Soovituslikud tööriistad dokumentatsiooni tegemiseks
 
-## Kokkuvõte
+Dokumentatsiooni saab teha erinevate tööriistadega, sõltuvalt eesmärgist. Järgi juhendaja soovitusi.
 
-Hea dokumentatsioon:
+**Lihtne ja levinud:**
+- Microsoft Word – aruanded ja esitatavad tööd. Jaga pilvekeskkonnas (Google Drive, OneDrive jms)  
+- Google Docs – koostöö ja jagamine  
 
-- näitab tehtud tööd  
-- selgitab otsuseid  
-- tõendab tulemust  
+**Tehniline dokumentatsioon:**
+- Markdown (.md) – README failid ja projektid GitHubis  
+- Visual Studio Code – Markdown kirjutamine koos eelvaatega  
+- Typora – kirjutamine koos kohese visuaalse eelvaatega  
+- Obsidian – suuremad ja omavahel seotud dokumentatsioonid  
 
-Kui lugeja saab aru, mida tehti, miks seda tehti ja näeb, et tulemus on olemas, siis on dokumentatsioon korrektne.
+**Projektipõhine dokumentatsioon:**
+- GitHub Wiki – mitmelehelised juhendid ja projektidokumentatsioon  
+
+Oluline ei ole tööriist, vaid see, et dokumentatsioon oleks:
+- arusaadav  
+- põhjendatud  
+- kontrollitav
