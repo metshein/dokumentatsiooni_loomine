@@ -24,6 +24,8 @@ Dokumentatsioon peab vastama kolmele küsimusele:
 - miks tehti
 - milline on tulemus
 
+## Sisukord
+
 - [Mida tehti](mida-tehti.md)
 - [Miks tehti](miks-tehti.md)
 - [Milline on tulemus](milline-on-tulemus.md)
