@@ -21,9 +21,17 @@ Dokumentatsioon ei kirjelda ainult tegevusi, vaid selgitab otsuseid ja tõendab 
 
 Dokumentatsioon peab vastama kolmele küsimusele:
 
-- mida tehti
-- miks tehti
-- milline on tulemus
+```mermaid
+flowchart TB
+	D[Dokumentatsioon]
+	A[Mida tehti]
+	B[Miks tehti]
+	C[Milline on tulemus]
+
+	D --> A
+	D --> B
+	D --> C
+```
 
 ## Sisukord
 
