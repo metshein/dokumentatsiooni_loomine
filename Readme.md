@@ -22,6 +22,8 @@ Tulemus peab olema tõendatav:
 
 Käsud ja kood tuleb eraldi ja selgelt vormindada. Dokumentatsiooni põhjal peab olema võimalik tehtut kontrollida.
 
+👉 Täpsem juhend: [Dokumentatsiooni juhend](../../wiki/Dokumentatsiooni-juhend)
+
 ## Pikk versioon
 
 Dokumentatsiooni eesmärk sõltub kontekstist, kuid põhimõte on sama – tehtud töö peab olema arusaadav, põhjendatud ja kasutatav ka teiste poolt.
