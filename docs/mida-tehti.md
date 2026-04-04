@@ -6,22 +6,41 @@ nav_order: 2
 
 # Mida tehti
 
-Kirjelda konkreetselt tehtud tegevused.
+Kirjelda konkreetselt, mis tegelikult ära tehti. Siia käib töö tegevuste kujul, mitte üldine jutt. Kirjuta nii, et lugeja saab aru, millised sammud projekti jooksul tehti ja mida oleks võimalik vajadusel uuesti teha.
 
-Väldi üldsõnalisi lauseid:
+Tavaline tegevus projektides on näiteks:
 
-- "seadistati süsteem"
-- "tehti vajalikud muudatused"
+- keskkonna ettevalmistamine
+- tarkvara paigaldamine
+- seadistuse muutmine
+- failide või konfiguratsiooni lisamine
+- teenuse käivitamine ja kontrollimine
+- testi või kontrollsamme läbiviimine
 
-Too välja:
+Kirjelda tegevusplokke, mitte iga üksikut hiireklõpsu või klahvivajutust. Kui sama tüüpi tegevust tehti mitu korda, piisab ühest selgest kirjeldusega näitest või lühikesest kokkuvõttest.
 
-- milline tegevus tehti
-- millise käsu või tööriistaga
+Hea reegel on see: kui tegevuse saab hiljem sama järgi uuesti teha, siis see kuulub siia.
 
-Näide (halb):
+> Näide (hea): paigaldati PostgreSQL andmebaasiserver, et rakendus saaks andmeid püsivalt salvestada ja päringuid teha.
+>
+> Koodinäide:
+>
+> ```bash
+> sudo apt install postgresql
+> sudo systemctl enable postgresql
+> sudo systemctl start postgresql
+> sudo -u postgres psql -c "CREATE DATABASE projekt_db;"
+> ```
+>
+> (Pilditõestus andmebaasi loomisest)
+> {: .green }
 
-- seadistati server
+Väldi:
 
-Näide (hea):
+- liiga üldisi lauseid nagu "tehti vajalikud muudatused"
+- põhjendusi ja seletusi, miks midagi tehti
+- loetelu, mis ei ütle, mida päriselt muudeti
+- liiga detailset tööprotsessi, mis loetleb iga väikese sammu eraldi
 
-- paigaldati tarkvara käsuga `sudo apt install pakett`
+{: .warning }
+Näide (halb): seadistati server, tehti vajalikud muudatused ja pandi projekt käima
