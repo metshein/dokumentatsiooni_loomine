@@ -6,3 +6,12 @@ callouts:
   warning:
     title: NB!
     color: red
+  green:
+    title: NB!
+    color: green
+  orange:
+    title: NB!
+    color: orange
+  blue:
+    title: NB!
+    color: blue
