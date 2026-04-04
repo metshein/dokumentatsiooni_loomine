@@ -16,7 +16,7 @@ Hea dokumentatsioon võimaldab:
 - mõista, kuidas see töötab
 - teostada haldust ja veaotsingut
 
-{: .warning }
+{: .blue }
 Dokumentatsioon ei kirjelda ainult tegevusi, vaid selgitab otsuseid ja tõendab tulemust, nii et teine inimene saab aru, mida tehti, miks seda tehti ja kuidas sama lahendus uuesti toimima panna.
 
 Dokumentatsioon peab vastama kolmele küsimusele:
