@@ -6,14 +6,22 @@ nav_order: 2
 
 # Mida tehti
 
-Dokumentatsioonis kirjeldati tehtud tegevused konkreetselt ja kontrollitavalt.
+Kirjelda konkreetselt tehtud tegevused.
 
-Näide tegevuse kirjeldusest:
+Väldi üldsõnalisi lauseid:
+
+- "seadistati süsteem"
+- "tehti vajalikud muudatused"
+
+Too välja:
+
+- milline tegevus tehti
+- millise käsu või tööriistaga
+
+Näide (halb):
+
+- seadistati server
+
+Näide (hea):
 
 - paigaldati tarkvara käsuga `sudo apt install pakett`
-
-Tegevuste kirjeldus anti edasi umbisikulises vormis:
-
-- tehti
-- paigaldati
-- muudeti

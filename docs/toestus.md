@@ -6,15 +6,21 @@ nav_order: 5
 
 # Tõestus
 
-Tulemus peab olema tõendatav.
+Iga oluline tulemus peab olema tõendatav.
 
-Lubatud tõendamise viisid:
+Sobivad tõestused:
 
 - käsu väljund
 - logi või päringu tulemus
 - ekraanipilt
 - link, kui see viib otseselt kontrollitava tulemuseni
 
-Näide:
+## Oluline
 
-- [näiteks tõestus pildina]
+- tõestus peab olema kontrollitav
+- tõestus peab olema seotud väitega
+
+## Näide
+
+- teenuse olek kontrolliti käsuga `systemctl status teenus`
+- väljund näitas `active (running)`

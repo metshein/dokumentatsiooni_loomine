@@ -6,26 +6,35 @@ nav_order: 6
 
 # Vormistus ja kirjutamisviis
 
-Dokumentatsioon kirjutatakse umbisikulises vormis, mitte "mina tegin" vormis.
+Dokumentatsioon kirjutatakse umbisikulises vormis.
 
-Soovitatav kirjutusviis:
+Kasutatakse:
 
-- tehti
-- paigaldati
-- muudeti
+- tehti, paigaldati, muudeti
 
-Mittesoovitatav kirjutusviis:
+Ei kasutata:
 
-- mina tegin
+- ma tegin, paigaldasin, muutsin
 
-Käsud ja kood peavad olema eraldi ning selgelt vormindatud.
+Näide (halb):
 
-Inline-näide:
+- paigaldasin tarkvara ja muutsin faili
+
+Näide (hea):
+
+- tarkvara paigaldati ja konfiguratsioonifaili muudeti
+
+Käsud ja kood esitatakse:
+
+- lühikesed käsud teksti sees (`käsk`)
+- pikemad käsud eraldi plokis (taandega)
+
+Näide:
 
 - `sudo apt install pakett`
 
-Plokinäide:
+Kui dokumentatsioon kirjutatakse tekstiredaktoris (nt Drive Document), siis:
 
-```bash
-sudo apt install pakett
-```
+- koodi ja käske kuvatakse monoruumi fondiga (nt **Courier New**, **Consolas**)
+
+See aitab eristada käske ja muud teksti ning muudab dokumentatsiooni loetavamaks.

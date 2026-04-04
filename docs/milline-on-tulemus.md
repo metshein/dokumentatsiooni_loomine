@@ -6,12 +6,30 @@ nav_order: 4
 
 # Milline on tulemus
 
-Dokumentatsiooni põhjal peab olema võimalik tehtut kontrollida.
+Dokumentatsioon peab näitama lõpptulemust ja selle kontrolli.
 
-Tulemus loetakse sobivaks siis, kui see on kontrollitav ja üheselt mõistetav.
+Too välja:
 
-Kontrolli näited:
+- kuidas kontrolliti
+- milline oli tulemus
 
-- kas teenus käivitub
-- kas vajalik muudatus on rakendunud
-- kas saadud väljund vastab oodatule
+Näide (halb):
+
+- süsteem töötab
+
+Näide (hea):
+
+- kontrolliti teenuse olekut käsuga `systemctl status teenus`
+- tulemuseks oli `active (running)`, mis kinnitab, et teenus töötab
+
+Tõestus võib olla:
+
+- käsu väljund (kopeeritud tekst)
+- logi või päringu tulemus
+- ekraanipilt
+- link (kui viib otsesele ja kontrollitavale tulemusele)
+
+Oluline:
+
+- tõestus peab olema kontrollitav
+- tõestus peab olema seotud väitega (ei tohi olla suvaline pilt või väljund)

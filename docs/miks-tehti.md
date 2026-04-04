@@ -6,10 +6,17 @@ nav_order: 3
 
 # Miks tehti
 
-Iga tegevuse juures anti põhjendus, et oleks selge tegevuse eesmärk.
+Iga oluline tegevus peab olema põhjendatud.
 
-Näide põhjendusest:
+Näita:
 
-- paigaldati tarkvara käsuga `sudo apt install pakett`, et võimaldada teenuse käivitamine ja edasine seadistamine
+- miks see samm oli vajalik
+- mida see lahendab või võimaldab
 
-Põhjendused aitavad aru saada, miks valitud lahendus oli vajalik.
+## Näide (halb)
+
+- muudeti seadistust
+
+## Näide (hea)
+
+- seadistust muudeti, et piirata ligipääsu ainult lokaalsele masinale

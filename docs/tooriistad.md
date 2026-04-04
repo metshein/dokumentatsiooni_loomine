@@ -6,14 +6,27 @@ nav_order: 7
 
 # Tööriistad
 
-Dokumentatsioonis kasutati tehniliste tegevuste kirjeldamiseks käske, logisid ja ekraanipilte.
+Dokumentatsiooni saab teha erinevate tööriistadega, sõltuvalt eesmärgist. Järgi juhendaja soovitusi.
 
-Kasutatavate tööriistade liigid:
+**Lihtne ja levinud:**
 
-- käsurea tööriistad
-- logide vaatamise vahendid
-- ekraanipiltide loomise vahendid
+- Microsoft Word - aruanded ja esitatavad tööd. Jaga pilvekeskkonnas (Google Drive, OneDrive jms)
+- Google Docs - koostöö ja jagamine
 
-Näide käsurea tööriistast:
+**Tehniline dokumentatsioon:**
 
-- `sudo apt install pakett`
+- Markdown (.md) - README failid ja projektid GitHubis
+- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- Visual Studio Code - Markdown kirjutamine koos eelvaatega
+- Typora - kirjutamine koos kohese visuaalse eelvaatega
+- Obsidian - suuremad ja omavahel seotud dokumentatsioonid
+
+**Projektipõhine dokumentatsioon:**
+
+- GitHub Wiki - mitmelehelised juhendid ja projektidokumentatsioon
+
+Oluline ei ole tööriist, vaid see, et dokumentatsioon oleks:
+
+- arusaadav
+- põhjendatud
+- kontrollitav
