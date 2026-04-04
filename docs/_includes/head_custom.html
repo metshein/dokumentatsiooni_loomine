@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="{{ '/assets/css/theme-toggle.css' | relative_url }}">
+<script>
+    (function () {
+        var storageKey = 'site-theme';
+
+        function getPreferredTheme() {
+            var saved = localStorage.getItem(storageKey);
+            if (saved === 'dark' || saved === 'light') {
+                return saved;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem(storageKey, theme);
+
+            var btn = document.getElementById('theme-toggle-btn');
+            if (btn) {
+                btn.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+                btn.setAttribute('aria-label', theme === 'dark' ? 'Lulita heledasse reziimi' : 'Lulita tumedasse reziimi');
+            }
+        }
+
+        function setupToggle() {
+            var button = document.createElement('button');
+            button.id = 'theme-toggle-btn';
+            button.type = 'button';
+            button.className = 'theme-toggle-btn';
+            button.addEventListener('click', function () {
+                var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+                applyTheme(current === 'dark' ? 'light' : 'dark');
+            });
+
+            document.body.appendChild(button);
+            applyTheme(getPreferredTheme());
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            applyTheme(getPreferredTheme());
+            setupToggle();
+        });
+    })();
+</script>
