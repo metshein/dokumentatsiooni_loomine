@@ -17,7 +17,7 @@ Dokumentatsiooni saab teha erinevate tööriistadega, sõltuvalt eesmärgist. J�
 
 - Markdown (.md) - README failid ja projektid GitHubis
 - Markdowni süntaksijuhend: [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- Visual Studio Code - Markdown kirjutamine koos eelvaatega
+- Visual Studio Code - Markdown kirjutamine koos eelvaatega (`Ctrl+Shift+V`)
 - Typora - kirjutamine koos kohese visuaalse eelvaatega ([Typora Docs](https://support.typora.io))
 - Obsidian - suuremad ja omavahel seotud dokumentatsioonid ([Obsidian](https://obsidian.md/))
 

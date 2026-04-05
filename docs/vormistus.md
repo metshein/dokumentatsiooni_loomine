@@ -16,13 +16,15 @@ Ei kasutata:
 
 - ma tegin, paigaldasin, muutsin
 
-Näide (halb):
+Kui dokumentatsioon kirjutatakse tekstiredaktoris (nt Drive Document), siis:
 
-- paigaldasin tarkvara ja muutsin faili
+- koodi ja käske kuvatakse monoruumi fondiga (nt **Courier New**, **Consolas** 10pt)
 
-Näide (hea):
+{: .warning }
+Näide (halb): paigaldasin tarkvara ja muutsin faili
 
-- tarkvara paigaldati ja konfiguratsioonifaili muudeti
+{: .green }
+Näide (hea): tarkvara paigaldati ja konfiguratsioonifaili muudeti
 
 Käsud ja kood esitatakse:
 
@@ -32,9 +34,3 @@ Käsud ja kood esitatakse:
 Näide:
 
 - `sudo apt install pakett`
-
-Kui dokumentatsioon kirjutatakse tekstiredaktoris (nt Drive Document), siis:
-
-- koodi ja käske kuvatakse monoruumi fondiga (nt **Courier New**, **Consolas**)
-
-See aitab eristada käske ja muud teksti ning muudab dokumentatsiooni loetavamaks.
