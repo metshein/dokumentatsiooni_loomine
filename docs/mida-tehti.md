@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mida tehti
-nav_order: 2
+nav_order: 3
 ---
 
 # Mida tehti
@@ -21,24 +21,31 @@ Kirjelda tegevusplokke, mitte iga üksikut hiireklõpsu või klahvivajutust. Kui
 
 Hea reegel on see: kui tegevuse saab hiljem sama järgi uuesti teha, siis see kuulub siia.
 
+## Näide (hea)
+
 {: .green }
-Näide (hea): paigaldati PostgreSQL andmebaasiserver käsuga `sudo apt install postgresql`, et rakendus saaks andmeid püsivalt salvestada.
+Näide (hea): paigaldati MariaDB andmebaasiserver käsuga `sudo apt install mariadb-server`, et teha tabeli loomise, varundamise ja taastamise etapid ühes keskkonnas.
 (pilditõestus)
 
 Kui tegu on tavapäraste üksteisele järgnevate käskudega ja tulemus on üks, võib kirjelduse kirjutada pikema lõiguna, kuid käsud tuleb siiski eraldi koodilõiguna välja tuua.
 
-Näide 2 (hea): uuendati paketiloendeid, paigaldati PostgreSQL ning loodi rakenduse jaoks andmebaas.
+Näide 2 (hea): loodi andmebaas ja tabel, lisati näidisandmed, tehti varukoopia ning taastati andmed pärast tabeli kustutamist.
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install postgresql postgresql-contrib -y
-sudo systemctl enable postgresql
-sudo systemctl start postgresql
-sudo -u postgres psql -c "CREATE DATABASE projekt_db;"
+sudo apt install mariadb-server -y
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+mysql -u root -e "CREATE DATABASE projekt_db;"
+mysqldump -u root projekt_db > projekt_db_dump.sql
+mysql -u root -e "DROP TABLE projekt_db.customers;"
+mysql -u root projekt_db < projekt_db_dump.sql
 ```
 
-(Pilditõestus andmebaasi loomisest)
+(Pilditõestus varundamisest ja taastamisest)
+
+## Näide (halb)
 
 Väldi:
 

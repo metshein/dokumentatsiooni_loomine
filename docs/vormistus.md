@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Vormistus ja kirjutamisviis
-nav_order: 6
+nav_order: 7
 ---
 
 # Vormistus ja kirjutamisviis

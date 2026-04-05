@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tööriistad
-nav_order: 7
+nav_order: 8
 ---
 
 # Tööriistad
@@ -16,10 +16,10 @@ Dokumentatsiooni saab teha erinevate tööriistadega, sõltuvalt eesmärgist. J�
 **Tehniline dokumentatsioon:**
 
 - Markdown (.md) - README failid ja projektid GitHubis
-- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- Markdowni süntaksijuhend: [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - Visual Studio Code - Markdown kirjutamine koos eelvaatega
-- Typora - kirjutamine koos kohese visuaalse eelvaatega
-- Obsidian - suuremad ja omavahel seotud dokumentatsioonid
+- Typora - kirjutamine koos kohese visuaalse eelvaatega ([Typora Docs](https://support.typora.io))
+- Obsidian - suuremad ja omavahel seotud dokumentatsioonid ([Obsidian](https://obsidian.md/))
 
 **Projektipõhine dokumentatsioon:**
 

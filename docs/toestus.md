@@ -1,16 +1,18 @@
 ---
 layout: default
 title: Tõestus
-nav_order: 5
+nav_order: 6
 ---
 
 # Tõestus
 
-Iga oluline tulemus peab olema tõendatav.
+Selles peatükis esitad kontrollitavad tõendid, mis kinnitavad eelmises peatükis toodud tulemusi.
+
+Lihtne reegel: iga tulemuse väite juurde lisa vähemalt üks kontrollitav tõend.
 
 Sobivad tõestused:
 
-- käsu väljund
+- käsu väljund (kopeeritud tekst)
 - logi või päringu tulemus
 - ekraanipilt
 - link, kui see viib otseselt kontrollitava tulemuseni
@@ -19,8 +21,13 @@ Sobivad tõestused:
 
 - tõestus peab olema kontrollitav
 - tõestus peab olema seotud väitega
+- tõestus peab olema loetav (ära lisa liiga pikka toorväljastust ilma selgituseta)
 
 ## Näide
 
-- teenuse olek kontrolliti käsuga `systemctl status teenus`
-- väljund näitas `active (running)`
+- Väide: MariaDB teenus töötab
+- Tõestus: käsu `systemctl status mariadb` väljundis on seisund `active (running)`
+- Väide: tabel `customers` on loodud
+- Tõestus: päringu `SHOW TABLES;` tulemustes on näha `customers`
+- Väide: andmed taastati varukoopiast
+- Tõestus: taastamise järel `SELECT * FROM customers;` kuvab enne kustutamist sisestatud read

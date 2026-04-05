@@ -1,35 +1,38 @@
 ---
 layout: default
 title: Milline on tulemus
-nav_order: 4
+nav_order: 5
 ---
 
 # Milline on tulemus
 
-Dokumentatsioon peab näitama lõpptulemust ja selle kontrolli.
+Selles peatükis kirjelda, milline seis pärast tehtud tegevusi saavutati.
 
-Too välja:
+Tulemus on selge väide selle kohta, mis on nüüd olemas, töötab või on kasutatav.
 
-- kuidas kontrolliti
-- milline oli tulemus
+Kirjuta tulemus etapi kaupa:
 
-Näide (halb):
+- nimeta tegevusetapp
+- kirjelda 1-2 lausega, mis pärast seda etappi muutus
+- lisa ainult oluline lõppseis, mitte käsu detailne käik
 
-- süsteem töötab
+## Näide (halb)
 
+{: .warning }
+Näide (halb): süsteem töötab
+
+## Näide (hea)
+
+{: .green }
 Näide (hea):
 
-- kontrolliti teenuse olekut käsuga `systemctl status teenus`
-- tulemuseks oli `active (running)`, mis kinnitab, et teenus töötab
-
-Tõestus võib olla:
-
-- käsu väljund (kopeeritud tekst)
-- logi või päringu tulemus
-- ekraanipilt
-- link (kui viib otsesele ja kontrollitavale tulemusele)
+- Etapp: MariaDB paigaldus ja algseadistus. Tulemus: andmebaasiteenus töötab.
+- Etapp: tabeli loomine ja andmete lisamine. Tulemus: tabel `customers` on loodud ning andmed on olemas.
+- Etapp: varundamine ja taastamine. Tulemus: tabel taastati varukoopiast ja andmed säilisid.
 
 Oluline:
 
-- tõestus peab olema kontrollitav
-- tõestus peab olema seotud väitega (ei tohi olla suvaline pilt või väljund)
+- kirjelda tulemust väitena, mida saab kontrollida
+- ära lisa selgitust pärast igat käsku; kirjelda tulemus tegevusetapi lõpus
+- hoia tulemus lühike ja konkreetne
+- iga tulemuse väide peab olema tõendatav peatükis "Tõestus"

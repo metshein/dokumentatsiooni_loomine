@@ -35,6 +35,7 @@ flowchart TB
 
 ## Sisukord
 
+- [Lähteinfo ja struktuur](lahteinfo-ja-struktuur.md)
 - [Mida tehti](mida-tehti.md)
 - [Miks tehti](miks-tehti.md)
 - [Milline on tulemus](milline-on-tulemus.md)
