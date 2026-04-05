@@ -13,14 +13,14 @@ See peab vastama kolmele küsimusele:
 
 ```mermaid
 flowchart TB
-	D[Dokumentatsioon]
-	A[Mida tehti]
-	B[Miks tehti]
-	C[Milline on tulemus]
+    D[Dokumentatsioon]
+    A[Mida tehti]
+    B[Miks tehti]
+    C[Milline on tulemus]
 
-	A --> D
-	B --> D
-	C --> D
+    A --> D
+    B --> D
+    C --> D
 ```
 
 Näide:
