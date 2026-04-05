@@ -11,6 +11,18 @@ See peab vastama kolmele küsimusele:
 - miks tehti
 - milline on tulemus
 
+```mermaid
+flowchart TB
+	D[Dokumentatsioon]
+	A[Mida tehti]
+	B[Miks tehti]
+	C[Milline on tulemus]
+
+	A --> D
+	B --> D
+	C --> D
+```
+
 Näide:
 
 - paigaldati tarkvara käsuga `sudo apt install pakett`, et võimaldada teenuse käivitamine ja edasine seadistamine
