@@ -18,7 +18,7 @@ Ei kasutata:
 
 Kui dokumentatsioon kirjutatakse tekstiredaktoris (nt Drive Document), siis:
 
-- koodi ja käske kuvatakse monoruumi fondiga (nt **Courier New**, **Consolas** 10pt)
+- koodi ja käske kuvatakse mono-tüüpi fondiga (nt **Courier New**, **Consolas** 10pt)
 
 {: .warning }
 Näide (halb): paigaldasin tarkvara ja muutsin faili
